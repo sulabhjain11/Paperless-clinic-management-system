@@ -1,0 +1,79 @@
+------------------------------------------------ADMIN-----------------------------------------------------
+ALL OF THE THINGS WILL BE MANAGED BY THE ADMINISTRATOR.
+
+FUNCTIONALITY OF ADMINISTRATOR: ADD
+                                DELETE
+                                UPDATE
+                                SAVE
+                                VIEW
+
+administrator can add,delete,update,save,view the roles provided by the hospital.
+ROLES: ADMINISTRATOR
+       DOCTOR
+       PATIENT
+       ACCOUNTANT
+       LABORATORIST
+       NURSE
+       PHARMACIST
+
+administrator can add,delete,update,save,view all of the below given role.
+name,username,password,phone,address,role(select)
+STAFF: DOCTOR
+       ACCOUNTANT
+       LABORATORIST
+       NURSE
+       PHARMACIST
+       compounder
+       manager
+
+administrator can add,delete,update,save,view all of the below given role.
+medicine,company,type(internal,external)
+MEDICINE:
+
+administrator can add,delete,update,save,view all the diseases that have come into the hospital.
+DISEASES:
+
+administrator can add,delete,update,save,view all the symptoms of the patients that have come into the hospital.
+SYMPTOMS:
+
+administrator can add,delete,update,save,view
+Patient,Patient phone number,Patient aadharcard number,Age,Gender,Appointment Date,Appointment For(select:heart,lungs,etc and doctors list),Father/Mother/Guardian,Guardian phone number.
+If aadharcard found in database, show previous history.(Last appointed date,consulted to,status)
+Else add aadharcard to the database.
+PATIENT: logged in user as well as guest users.
+
+CHECKUP: THIS ONE IS FOR THE DOCTOR.
+date: present date.
+select patient: list of patients in ascending order of their token number.
+callpatient()========TURNSCREEN.
+age, guardian, etc boxes will be filled automatically as soon as the user presses the callpatient() button.
+Patients history will be displayed if present.
+patient's history:
+last appointed date,consulted to,prescription(internal),prescription(external),pulse,temperature,blood-glucose,symptons,diseases,scan/lab-tests/x-rays.
+---------------------------
+add,edit,save,delete,view.
+symptoms: lists(add,remove),show symptoms below.
+disease: doctor tells and updates as above.
+prescription(external): list of medicines + dosage(add,remove)=====show below
+prescription(internal): list of medicines + dosage(add,remove)=====show below
+scan/labtest/ultrasounds, told to do by the doctor(add,remove,show below).
+remarks by doctor:
+Fees:
+Discount:
+Total amount to be paid by the patient.
+
+add,edit,save,delete,view.
+PAYMENT: this is the receptionist.
+Select date:
+checkbox: checked(show the records of all the patients that have paid the bill)
+          unchecked(show the records of all the patients that are yet to pay the bill)
+load: show all of such patient who have not paid the bill.
+(Token,aadharcard,Patient name,guardian,age,phone,date/time,doctor name,status(consulted/not consulted),fees,discount,amount to be paid,option button(clicked after the amount has been paid by the patient))
+As soon as save button is paid by the receptionist, invoice will be generated and printed.
+
+STATISTICS: FOR THE DOCTOR
+select range:
+daily: date will be show and the doctor has to choose from.
+monthly: the doctor has to choose the month.
+yearly: the doctor has to choose the year.
+load.
